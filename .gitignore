@@ -1,0 +1,16 @@
+# 不提交编译、安装、运行日志和本地编辑器文件。
+build/
+install/
+log/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+*.swp
+# 仓库只保留 README 作为说明文档。
+*.md
+!README.md
+*.pdf
+*.doc
+*.docx
+*.bak

@@ -1,0 +1,40 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: joint_state_rviz_panel/JointStatePanel
+  Name: Joint State Monitor
+  Topic: /joint_states
+  Unit: deg
+  FilterMode: auto
+  JointNames: []
+  Reliability: best_effort
+  AssumeUnknownRevolute: false
+Visualization Manager:
+  Class: ''
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Name: Grid
+    Enabled: true
+    Plane Cell Count: 10
+    Reference Frame: <Fixed Frame>
+    Value: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+    Frame Rate: 30
+  Name: root
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  Value: true
+  Enabled: true
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 850
+  Hide Left Dock: false
+  Hide Right Dock: false
+  Joint State Monitor:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd000000020000000000000156000002f8fc0200000001fb000000100044006900730070006c006100790073010000003d000002f8000000c900ffffff0000000100000140000002f8fc0200000001fb00000026004a006f0069006e00740020005300740061007400650020004d006f006e00690074006f0072010000003d000002f8000001b700ffffff0000020e000002f800000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Width: 1200

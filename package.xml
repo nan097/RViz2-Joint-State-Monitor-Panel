@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>joint_state_rviz_panel</name><version>2.0.0</version>
+  <description>Read-only generic JointState monitor panel for RViz2</description>
+  <maintainer email="maintainer@example.com">Joint Monitor Maintainers</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend><depend>sensor_msgs</depend>
+  <depend>rviz_common</depend><depend>pluginlib</depend>
+  <depend>qtbase5-dev</depend><depend>yaml-cpp</depend>
+  <exec_depend>rclpy</exec_depend><exec_depend>rviz2</exec_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

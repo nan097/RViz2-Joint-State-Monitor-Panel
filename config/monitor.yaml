@@ -1,0 +1,35 @@
+# 关节名称和限位仅用于演示，不代表任何实际机械臂参数。
+monitor:
+  topic: /joint_states
+  refresh_hz: 20
+  qos_reliability: best_effort
+  warn_after_sec: 1.0
+  timeout_after_sec: 2.0
+  default_rotation_unit: deg
+  mode: auto
+  robot_profile: generic
+  # 未知类型默认显示原始值，只有明确启用时才按旋转关节换算。
+  assume_unknown_revolute: false
+robots:
+  generic:
+    display_name: Generic Robot
+    joint_names: []
+    joints: {}
+  example_7dof:
+    display_name: Example 7-DOF (demo only)
+    joint_names: [joint1, joint2, joint3, joint4, joint5, joint6, joint7]
+    joints:
+      joint1: {type: revolute, lower: -3.14, upper: 3.14}
+      joint2: {type: revolute}
+      joint3: {type: revolute}
+      joint4: {type: revolute}
+      joint5: {type: revolute}
+      joint6: {type: revolute}
+      joint7: {type: revolute}
+  example_mixed:
+    display_name: Mixed / dual-arm example
+    joint_names: [left_joint1, right_joint1, slide]
+    joints:
+      left_joint1: {type: revolute}
+      right_joint1: {type: continuous}
+      slide: {type: prismatic, lower: 0.0, upper: 0.5}
